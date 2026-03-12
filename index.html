@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fix Flow - Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="cabeza">
+        <h1 class="titulo-cabecera">FIX FLOW</h1>
+        <img src="images/logo.png" alt="Logotipo de la empresa">
+        <div class="frase">
+            <p>Automatiza, localiza y resuelve fallos técnicos con eficiencia.</p>
+        </div>
+
+        <nav class="botones-cabecera" aria-label="Navegación principal">
+            <a href="index.html"><button class="boton-grande">INICIO</button></a>
+            <a href="registro.html"><button class="boton-grande">REGISTRAR INCIDENCIA</button></a>
+            <a href="sobre_nosotros.html"><button class="boton-grande">SOBRE NOSOTROS</button></a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="seccion-que-hacemos">
+            <div class="contenedor-que-hacemos">
+                <h2 class="titulo-seccion">¿Qué hacemos?</h2>
+                <p class="texto-que-hacemos">
+                    En nuestra empresa desarrollamos soluciones digitales para la gestión eficiente de incidencias
+                    técnicas en entornos industriales.
+                    Automatizamos procesos, mejoramos la trazabilidad de los fallos y facilitamos el seguimiento en
+                    tiempo real desde cualquier dispositivo.
+                </p>
+                <p class="texto-que-hacemos">
+                    Nuestra plataforma está diseñada para adaptarse a fábricas, empresas tecnológicas y entornos
+                    industriales modernos, combinando facilidad de uso con funcionalidades avanzadas.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="seccion-horario">
+            <div class="titulo-horario">
+                <h2>Horario Semanal</h2>
+            </div>
+            <div class="tabla-horario">
+                <table class="tabla-horaria">
+                    <tr>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                    </tr>
+                    <tr>
+                        <td>9:00 - 13:00</td>
+                        <td>9:00 - 13:00</td>
+                        <td>9:00 - 13:00</td>
+                        <td>9:00 - 13:00</td>
+                        <td>9:00 - 13:00</td>
+                        <td>9:00 - 12:30</td>
+                        <td class="cerrado">Cerrado</td>
+                    </tr>
+                    <tr>
+                        <td>15:00 - 19:00</td>
+                        <td>15:00 - 19:00</td>
+                        <td>15:00 - 19:00</td>
+                        <td>15:00 - 19:00</td>
+                        <td>15:00 - 19:00</td>
+                        <td class="cerrado">Cerrado</td>
+                        <td class="cerrado">Cerrado</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="seccion-ubicacion">
+            <div class="info-ubicacion">
+                <h2 class="titulo-seccion">Ubicación</h2>
+                <p class="texto-direccion">C/ Plaça d’Europa, 11, 43840 Salou</p>
+                <a class="enlace-mapa" href="https://www.google.com/maps/search/?api=1&query=Plaça+d%27Europa+11+Salou"
+                    target="_blank">
+                    Ver ubicación en Google Maps
+                </a>
+            </div>
+            <div class="mapa-ubicacion">
+                <img src="images/mapa_salou.png" alt="Mapa de ubicación en Salou" class="imagen-mapa">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <form class="formulario-recomendaciones">
+            <h2 class="titulo-seccion">Recomendaciones de mejora</h2>
+
+            <div class="fila-formulario">
+                <label class="grupo-campo">Nombre:
+                    <input class="campo-nombre" type="text" name="nombre" required>
+                </label>
+
+                <label class="grupo-campo">Email:
+                    <input class="campo-email" type="email" name="email" required>
+                </label>
+
+                <label class="grupo-campo">Fecha:
+                    <input class="campo-fecha" type="date" name="fecha" required>
+                </label>
+
+                <label class="grupo-campo">Sexo:
+                    <select class="campo-sexo" name="sexo" required>
+                        <option value="">Seleccionar</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="no-decir">Prefiero no decirlo</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="campo-comentario">
+                <label class="grupo-campo">Comentario:
+                    <textarea class="campo-texto" name="comentario" required></textarea>
+                </label>
+            </div>
+
+            <div class="contenedor-boton">
+                <button class="boton-enviar" type="submit">Enviar recomendación</button>
+            </div>
+        </form>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

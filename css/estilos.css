@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cabeza {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.cabeza img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.frase p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.botones-cabecera {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boton-grande {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.boton-grande:hover {
+    background-color: #dcdcdc;
+}
+
+.seccion-que-hacemos {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.contenedor-que-hacemos {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.texto-que-hacemos {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.seccion-horario {
+    padding: 40px 20px;
+    background-color: #eef2f7;
+}
+
+.tabla-horaria {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-horaria th,
+.tabla-horaria td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+.cerrado {
+    color: red;
+    font-weight: bold;
+}
+
+.seccion-ubicacion {
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    background-color: white;
+}
+
+.info-ubicacion {
+    max-width: 400px;
+}
+
+.imagen-mapa {
+    width: 350px;
+    border-radius: 8px;
+}
+
+.pie-pagina {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 40px 20px;
+}
+
+.formulario-recomendaciones {
+    max-width: 900px;
+    margin: auto;
+}
+
+.fila-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.campo-texto {
+    width: 100%;
+    height: 100px;
+}
+
+.contenedor-boton {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.boton-enviar {
+    padding: 12px 25px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background-color: #dcdcdc;
+}
+
+@media (max-width: 768px) {
+    .botones-cabecera {
+        flex-direction: column;
+    }
+
+    .seccion-ubicacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen-mapa {
+        width: 100%;
+        max-width: 350px;
+    }
+}
