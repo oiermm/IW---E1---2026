@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fix Flow - Registrar Incidencia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- HEADER (idéntico al index) -->
+    <header class="cabeza">
+        <h1 class="titulo-cabecera">FIX FLOW</h1>
+        <img src="images/logo.png" alt="Logotipo de la empresa">
+        <div class="frase">
+            <p>Automatiza, localiza y resuelve fallos técnicos con eficiencia.</p>
+        </div>
+
+        <nav class="botones-cabecera" aria-label="Navegación principal">
+            <a href="index.html"><button class="boton-grande">INICIO</button></a>
+            <a href="registro.html"><button class="boton-grande">REGISTRAR INCIDENCIA</button></a>
+            <a href="sobre_nosotros.html"><button class="boton-grande">SOBRE NOSOTROS</button></a>
+        </nav>
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor-registro">
+        <h2 class="titulo-seccion">Registrar nueva incidencia</h2>
+
+        <form class="formulario-registro">
+
+            <label class="grupo-campo">Nombre del trabajador:
+                <input type="text" class="campo" required>
+            </label>
+
+            <label class="grupo-campo">Email de contacto:
+                <input type="email" class="campo" required>
+            </label>
+
+            <label class="grupo-campo">Departamento:
+                <select class="campo" required>
+                    <option value="">Seleccionar</option>
+                    <option value="produccion">Producción</option>
+                    <option value="mantenimiento">Mantenimiento</option>
+                    <option value="informatica">Informática</option>
+                    <option value="logistica">Logística</option>
+                </select>
+            </label>
+
+            <label class="grupo-campo">Fecha de la incidencia:
+                <input type="date" class="campo" required>
+            </label>
+
+            <label class="grupo-campo">Descripción de la incidencia:
+                <textarea class="campo" required></textarea>
+            </label>
+
+            <div class="contenedor-boton">
+                <button type="submit" class="boton-enviar">Enviar incidencia</button>
+            </div>
+
+        </form>
+    </main>
+
+
+    <!-- FOOTER (idéntico al index) -->
+    <footer class="pie-pagina">
+        <form class="formulario-recomendaciones">
+            <h2 class="titulo-seccion">Recomendaciones de mejora</h2>
+
+            <div class="fila-formulario">
+                <label class="grupo-campo">Nombre:
+                    <input class="campo-nombre" type="text" name="nombre" required>
+                </label>
+
+                <label class="grupo-campo">Email:
+                    <input class="campo-email" type="email" name="email" required>
+                </label>
+
+                <label class="grupo-campo">Fecha:
+                    <input class="campo-fecha" type="date" name="fecha" required>
+                </label>
+
+                <label class="grupo-campo">Sexo:
+                    <select class="campo-sexo" name="sexo" required>
+                        <option value="">Seleccionar</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="no-decir">Prefiero no decirlo</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="campo-comentario">
+                <label class="grupo-campo">Comentario:
+                    <textarea class="campo-texto" name="comentario" required></textarea>
+                </label>
+            </div>
+
+            <div class="contenedor-boton">
+                <button class="boton-enviar" type="submit">Enviar recomendación</button>
+            </div>
+        </form>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
