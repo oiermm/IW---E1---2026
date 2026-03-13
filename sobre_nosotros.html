@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fix Flow - Sobre Nosotros</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- HEADER (idéntico al index) -->
+    <header class="cabeza">
+        <h1 class="titulo-cabecera">FIX FLOW</h1>
+        <img src="images/logo.png" alt="Logotipo de la empresa">
+        <div class="frase">
+            <p>Automatiza, localiza y resuelve fallos técnicos con eficiencia.</p>
+        </div>
+
+        <nav class="botones-cabecera" aria-label="Navegación principal">
+            <a href="index.html"><button class="boton-grande">INICIO</button></a>
+            <a href="registro.html"><button class="boton-grande">REGISTRAR INCIDENCIA</button></a>
+            <a href="sobre_nosotros.html"><button class="boton-grande">SOBRE NOSOTROS</button></a>
+        </nav>
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor-sobre">
+
+        <section class="bloque-sobre">
+            <div class="texto-sobre">
+                <h2 class="titulo-seccion">Quiénes somos</h2>
+                <p>
+                    Fix Flow es una empresa especializada en soluciones tecnológicas para la gestión de incidencias en entornos industriales.
+                    Nuestro objetivo es mejorar la eficiencia operativa mediante herramientas digitales que permiten detectar, registrar y resolver fallos técnicos de forma rápida y precisa.
+                </p>
+                <p>
+                    Trabajamos con empresas de producción, logística y tecnología, ayudándoles a optimizar sus procesos y reducir tiempos de inactividad.
+                </p>
+            </div>
+
+            <div class="imagen-sobre">
+                <img src="images/empresa.jpg" alt="Equipo de trabajo de Fix Flow">
+            </div>
+        </section>
+
+        <section class="valores">
+            <h2 class="titulo-seccion">Nuestros valores</h2>
+
+            <ul class="lista-valores">
+                <li>✔ Innovación constante en Industria 4.0</li>
+                <li>✔ Compromiso con la eficiencia operativa</li>
+                <li>✔ Transparencia en todos nuestros procesos</li>
+                <li>✔ Soluciones adaptadas a cada cliente</li>
+                <li>✔ Trabajo en equipo y mejora continua</li>
+            </ul>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER (idéntico al index) -->
+    <footer class="pie-pagina">
+        <form class="formulario-recomendaciones">
+            <h2 class="titulo-seccion">Recomendaciones de mejora</h2>
+
+            <div class="fila-formulario">
+                <label class="grupo-campo">Nombre:
+                    <input class="campo-nombre" type="text" name="nombre" required>
+                </label>
+
+                <label class="grupo-campo">Email:
+                    <input class="campo-email" type="email" name="email" required>
+                </label>
+
+                <label class="grupo-campo">Fecha:
+                    <input class="campo-fecha" type="date" name="fecha" required>
+                </label>
+
+                <label class="grupo-campo">Sexo:
+                    <select class="campo-sexo" name="sexo" required>
+                        <option value="">Seleccionar</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="no-decir">Prefiero no decirlo</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="campo-comentario">
+                <label class="grupo-campo">Comentario:
+                    <textarea class="campo-texto" name="comentario" required></textarea>
+                </label>
+            </div>
+
+            <div class="contenedor-boton">
+                <button class="boton-enviar" type="submit">Enviar recomendación</button>
+            </div>
+        </form>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

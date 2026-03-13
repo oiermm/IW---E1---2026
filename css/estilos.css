@@ -169,10 +169,8 @@ a {
     }
 }
 
-/* ---------------------- */
-/* ESTILOS REGISTRO       */
-/* ---------------------- */
 
+/* ---------- ESTILOS REGISTRO ---------- */
 .contenedor-registro {
     max-width: 600px;
     margin: 40px auto;
@@ -213,3 +211,46 @@ a {
     background: #005fa3;
 }
 
+/* ---------- ESTILOS SOBRE NOSOTROS ---------- */
+.contenedor-sobre {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.bloque-sobre {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.texto-sobre {
+    flex: 1;
+}
+
+.imagen-sobre img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.valores {
+    text-align: center;
+}
+
+.lista-valores {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.lista-valores li {
+    background: #f2f2f2;
+    margin: 10px auto;
+    padding: 12px;
+    max-width: 500px;
+    border-radius: 8px;
+    font-size: 18px;
+}
