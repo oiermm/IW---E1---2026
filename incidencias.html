@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fix Flow - Detalle de Incidencias</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="cabeza">
+        <h1 class="titulo-cabecera">FIX FLOW</h1>
+        <img src="images/logo.png" alt="Logotipo de la empresa">
+        <div class="frase">
+            <p>Automatiza, localiza y resuelve fallos técnicos con eficiencia.</p>
+        </div>
+
+        <nav class="botones-cabecera" aria-label="Navegación principal">
+            <a href="index.html"><button class="boton-grande">INICIO</button></a>
+            <a href="registro.html"><button class="boton-grande">REGISTRAR INCIDENCIA</button></a>
+            <a href="sobre_nosotros.html"><button class="boton-grande">SOBRE NOSOTROS</button></a>
+            <a href="incidencias.html"><button class="boton-grande">INCIDENCIAS</button></a>
+        </nav>
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor-detalle">
+
+        <h2 class="titulo-seccion">Listado de incidencias</h2>
+
+        <section class="tabla-incidencias">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Departamento</th>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+                </tr>
+
+                <tr>
+                    <td>001</td>
+                    <td>Producción</td>
+                    <td>Fallo en la cinta transportadora</td>
+                    <td>Pendiente</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Informática</td>
+                    <td>Error en el servidor interno</td>
+                    <td>En proceso</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Mantenimiento</td>
+                    <td>Vibración anómala en motor</td>
+                    <td>Resuelto</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Logística</td>
+                    <td>Retraso en la carga de mercancía</td>
+                    <td>Pendiente</td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>Calidad</td>
+                    <td>Producto defectuoso detectado</td>
+                    <td>En proceso</td>
+                </tr>
+                <tr>
+                    <td>006</td>
+                    <td>Producción</td>
+                    <td>Parada inesperada de máquina</td>
+                    <td>Resuelto</td>
+                </tr>
+                <tr>
+                    <td>007</td>
+                    <td>Informática</td>
+                    <td>Fallo en el sistema de tickets</td>
+                    <td>Pendiente</td>
+                </tr>
+                <tr>
+                    <td>008</td>
+                    <td>Mantenimiento</td>
+                    <td>Fuga en sistema hidráulico</td>
+                    <td>En proceso</td>
+                </tr>
+                <tr>
+                    <td>009</td>
+                    <td>Logística</td>
+                    <td>Inventario desactualizado</td>
+                    <td>Resuelto</td>
+                </tr>
+                <tr>
+                    <td>010</td>
+                    <td>Calidad</td>
+                    <td>Desviación en parámetros de control</td>
+                    <td>Pendiente</td>
+                </tr>
+                <tr>
+                    <td>011</td>
+                    <td>Producción</td>
+                    <td>Ruido anómalo en línea secundaria</td>
+                    <td>En proceso</td>
+                </tr>
+                <tr>
+                    <td>012</td>
+                    <td>Informática</td>
+                    <td>Actualización fallida del software</td>
+                    <td>Resuelto</td>
+                </tr>
+            </table>
+
+        </section>
+
+        <section class="tarjetas-incidencias">
+            <div class="tarjeta">
+                <h3>Incidencia crítica</h3>
+                <p>Motor principal sobrecalentado.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Incidencia leve</h3>
+                <p>Sensor de temperatura descalibrado.</p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Incidencia moderada</h3>
+                <p>Retraso en la línea de empaquetado.</p>
+            </div>
+        </section>
+
+        <!-- Botón para la interacción JS del commit 5 -->
+        <div class="contenedor-boton">
+            <button id="boton-contar" class="boton-enviar">Mostrar número de incidencias</button>
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="pie-pagina">
+        <form class="formulario-recomendaciones">
+            <h2 class="titulo-seccion">Recomendaciones de mejora</h2>
+
+            <div class="fila-formulario">
+                <label class="grupo-campo">Nombre:
+                    <input class="campo-nombre" type="text" name="nombre" required>
+                </label>
+
+                <label class="grupo-campo">Email:
+                    <input class="campo-email" type="email" name="email" required>
+                </label>
+
+                <label class="grupo-campo">Fecha:
+                    <input class="campo-fecha" type="date" name="fecha" required>
+                </label>
+
+                <label class="grupo-campo">Sexo:
+                    <select class="campo-sexo" name="sexo" required>
+                        <option value="">Seleccionar</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="no-decir">Prefiero no decirlo</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="campo-comentario">
+                <label class="grupo-campo">Comentario:
+                    <textarea class="campo-texto" name="comentario" required></textarea>
+                </label>
+            </div>
+
+            <div class="contenedor-boton">
+                <button class="boton-enviar" type="submit">Enviar recomendación</button>
+            </div>
+        </form>
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
