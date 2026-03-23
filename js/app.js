@@ -55,3 +55,36 @@ function manejarRegistro(event) {
 if (formularioRegistro) {
     formularioRegistro.addEventListener("submit", manejarRegistro);
 }
+
+
+/* VALIDACION DE INCIDENCIAS */
+const incidencias = [
+    "Fallo en la cinta transportadora",
+    "Error en el servidor interno",
+    "Vibración anómala en motor",
+    "Retraso en la carga de mercancía",
+    "Producto defectuoso detectado",
+    "Parada inesperada de máquina",
+    "Fallo en el sistema de tickets",
+    "Fuga en sistema hidráulico",
+    "Inventario desactualizado",
+    "Desviación en parámetros de control",
+    "Ruido anómalo en línea secundaria",
+    "Actualización fallida del software"
+];
+
+function contarIncidencias() {
+    let total = 0;
+
+    for (let i = 0; i < incidencias.length; i++) {
+        total++;
+    }
+
+    alert("Número total de incidencias registradas: " + total);
+}
+
+const botonContar = document.getElementById("boton-contar");
+
+if (botonContar) {
+    botonContar.addEventListener("click", contarIncidencias);
+}
